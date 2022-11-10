@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.ancho{
+    max-width: 1200px;
+    margin: auto;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+header{
+    background-color: #ccc;
+}
+header figure{
+    max-width: 300px;
+    margin: auto;
+    padding: 25px;
+}
+header img{
+    width: 100%;
+}
+.contmenu{
+  /*  border: #28557a 1px solid;*/
+    padding: 10px;
+    display: none;
+}
+
+.iconbarra{
+    text-decoration: none;
+    background-color: #28557a;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 25px;
+ }
+nav{
+    margin: 10px;
+}
+ nav ul{
+     list-style: none;
+     margin: 10px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     align-items: stretch;
+     flex-wrap: wrap;
+     gap: 30px;
+ }
+ nav ul li a{
+     color: black;
+     text-decoration: none;
+     font-weight: bold;
+     border: #28557a 1px solid;
+     border-radius: 5px;
+     background-color: transparent;
+     padding: 10px 15px;
+     display: inline-block;
+     transition: all 0.5s;
+ }
+ nav ul li a:hover{
+    color: white;
+    background-color: #28557a;
+}
+
+
+section{
+    border: 1px #28557a solid;
+}
+.creacion{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+article{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 15px;
+    gap: 30px;
+}
+article h2{
+    color: #cc9900;
+}
+article a{
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all .5s;
+    color: white;
+    margin: 10px;
+    background-color: #800000;
+}
+article a:hover{
+    background-color: #cc9900;
+}
+.creacion figure{
+    max-width: 600px;
+}
+.creacion img{
+    width: 100%;
+}
+
+footer{
+    background-color: #28557a;
+}
+footer p{
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+/*mediaqueri_i*/
+@media screen and (max-width: 760px){
+    nav{
+        display: none;
+    }
+    nav ul{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    nav li{
+        width: 100%;
+    }
+    nav ul li a{
+        border: none;
+        border-bottom: #ccc 2px dotted;
+        display: block;
+        color: #28557a;
+    }
+    .creacion{
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+    .contmenu{
+          display: block;
+      }
+
+}
